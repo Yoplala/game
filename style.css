@@ -107,6 +107,12 @@ progress::-webkit-progress-value { 			/* Chrome / Safari / Opera */
 	justify-content: space-around;
 }
 
+#joueur1_top {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+
 #tour1 {
 	float: left;
     width: 20%;
@@ -115,7 +121,7 @@ progress::-webkit-progress-value { 			/* Chrome / Safari / Opera */
 
 #vie_joueur1 {
 	margin-top: 5%;
-	margin-left: 105px;
+	/*margin-left: 105px;*/
 }
 
 #description_joueur1 {
@@ -155,11 +161,21 @@ li {
 	font-size: 1.1em;
 }
 
+#description_droite {
+	margin-top: 0px;
+}
+
+#roi {
+	margin-top: 0px;
+	margin-bottom: 12px; 
+}
+
 #tour2 {
 	transform: scaleX(-1);
 	float: right;
     width: 20%;
 	margin-left: 10%
+	margin-top: 0px;
 }
 
 #vie_joueur2 {
