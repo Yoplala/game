@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+	  <meta charset="utf-8">
+	  <title>Jeu de plateau</title>
+	  <link rel="stylesheet" href="style.css">
+	</head>
+  
+	<body>
+		<h1>Jeu de plateau au tour par tour</h1>
+
+		<div id="jeu">
+			<div id="gauche">
+				<div>
+					<h2>Instructions</h2>
+					<div id="instructions"></div>
+					<div id="boutons">
+						<div id="bouton_go" class="bouton boutons_principaux">Démarrer la partie</div>
+						<div id="bouton_reset" class="bouton boutons_principaux">Regénérer la carte</div>
+					</div>
+				</div>
+
+				<div class="description">
+					<h2 id="preu">Preu chevalier</h2>
+					<div>
+						<p id="tour1"><img src="tower.svg" alt="Image tour"></p>
+						<progress id="vie_joueur1" max="100" value="100"></progress>
+						<p id="description_joueur1"></p>
+					</div>
+					<div id="joueur1">
+						<div id="image_joueur1"></div>
+						<div id="dégats_joueur1"></div>
+					</div>
+				</div>	
+			</div>
+			
+			<div id="centre">
+				<div id="plateau"></div>
+				<div id="consignes">
+					<div id="bouton_attaquer" class="bouton boutons_joueur">Attaquer</div>
+					<div id="instructions_joueur"></div>
+					<div id="bouton_parer" class="bouton boutons_joueur">Parer</div>
+				</div>
+			</div>
+			
+			<div id="droite"<div>
+				<div>
+					<h2>Description des armes</h2>
+					<ul>
+						<li><img src="weapon0.png" alt="Image arme">Mains nues : 10 dégâts</li>
+						<li><img src="weapon1.png" alt="Image arme">Lance-pierres : 13 dégâts</li>
+						<li><img src="weapon2.png" alt="Image arme">Gourdin : 15 dégâts</li>
+						<li><img src="weapon3.png" alt="Image arme">Épée : 17 dégâts</li>
+						<li><img src="weapon4.png" alt="Image arme">Arbalète : 20 dégâts</li>
+					</ul>
+				</div>
+
+				<div class="description">
+					<h2 id="roi">Roi squelette</h2>
+					<div>
+						<p id="tour2"><img src="tower.svg" alt="Image tour"></p>
+						<progress id="vie_joueur2" max="100" value="100"></progress>
+						<p id="description_joueur2"></p>
+					</div>
+					<div id="joueur2">
+						<div id="image_joueur2"></div>
+						<div id="dégats_joueur2"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.js"
+			integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+			crossorigin="anonymous"></script>
+		<script src="map.js"></script>
+		<script src="weapon.js"></script>
+		<script src="character.js"></script>
+		<script src="move.js"></script>
+		<script src="attack.js"></script>
+		<script src="game.js"></script>
+	</body>
+</html>
+
+  
+  
