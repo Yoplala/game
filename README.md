@@ -14,6 +14,7 @@ Projet réalisé dans le cadre de ma formation "Développeur frontend" chez Open
 - Mettre en œuvre la bibliothèque jQuery dans une application web
 
 *Les règles du jeu étaient données dans les consignes.*
+
 Livrables : Code HTML/CSS/JS du projet
 
 
